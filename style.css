@@ -121,8 +121,8 @@ work
 }
 
 .work h2 {
-    border-bottom: 1px solid var(--hColor);
-    border-top: 1px solid var(--hColor);
+   text-decoration: underline overline solid 1px;
+   margin-top: 20px 0;
 }
 
 .work p {
