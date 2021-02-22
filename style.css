@@ -1,1 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
 
+:root {
+    --fontFamily: 'Josefin Sans', sans-serif;
+    --fontSize: 16px;
+    --transition: .3 ease;
+    --colorFooter: #f6844e;
+    --buttonColor: #f08a4c;
+    --bodyColor: #ffffff;
+    --paragraphColor: #494949;
+    --hColor: #000002;
+}
+
+/*************
+**************
+basic style
+**************
+*************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    letter-spacing: 1.8px;
+    color: var(--paragraphColor);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--hColor);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bodyColor);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/*************
+**************
+header
+**************
+*************/
+header {
+    background-image: url(img/header.jpg);
+    height: 65vh;
+    background-size: cover;
+}
+
+header .logo img {
+    width: 250px;
+    height: 100px;
+    opacity: 70%;
+    float: left;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    float: left;
+    margin: 0 20px;
+    padding: 25px 0;
+}
+
+header ul li a {
+    background: var(--buttonColor);
+    padding: 10px;
+}
+
+header hgroup {
+    text-align: center;
+    padding: 50px 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+header ul li a:hover {
+    color: var(--hColor);
+    background: var(--bodyColor);
+
+}
+
+header hgroup h4 {
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+/*************
+**************
+work
+**************
+*************/
+.work {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.work h2 {
+    border-bottom: 1px solid var(--hColor);
+    border-top: 1px solid var(--hColor);
+}
+
+.work p {
+    border: 5px dashed var(--paragraphColor);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: justify;
+}
+
+/*************
+**************
+footer
+**************
+*************/
+
+footer {
+    background: var(--colorFooter);
+    height: 10vh;
+
+}
+
+footer p {
+    color: var(--bodyColor);
+    text-align: center;
+    padding: 30px 0;
+}
